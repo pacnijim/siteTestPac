@@ -1,0 +1,678 @@
+@font-face
+{
+  font-family: 'Facon';
+  src: url('../police/Facon/Facon.ttf');
+}
+@font-face
+{
+  font-family: "Alaska-Font";
+  src: url("../police/Alaska-Font/Alaska Font.ttf");
+}
+/* micro reset */
+*
+{
+	box-sizing: border-box;
+}
+html, body
+{
+	padding: 0;
+  margin: 0;
+}
+body
+{
+	background-color: Navy;
+}
+
+#header
+{
+  min-height: 22px;
+	position: sticky;
+	top: 0;
+  background-color: white;
+  color: blue;
+  line-height: 1.75;
+  border-bottom: 3px Navy solid;
+  border-radius: 0px 0px 13px 13px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	z-index: 2;
+}
+#boutonReduce, #boutonReduce a
+{
+	position: absolute;
+	top: 0;
+  left: 3px;
+  width: 1.3em;
+  height: 1.3em;
+	font-size: 0.8em;
+	text-decoration: none;
+	color: white;
+	background-color: Navy;
+  border-radius: 50%;
+  padding-left: 1.7px;
+	z-index: 3;
+}
+#headerInner
+{
+	display: table;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-top: -18px;
+	padding-top: -10px;
+}
+#headerInner > *
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+#headerText
+{
+  padding-left: 5px;
+}
+#name
+{
+  margin-top: 10px;
+  margin-bottom: -20px;
+  font-size: 3em;
+}
+#headerPhrase
+{
+  font-size: 1.5em;
+}
+
+#logo
+{
+	position: absolute;
+	top: 0px;
+	left: 625px;
+}
+#logo img
+{
+	width: 60px;
+	height: 60px;
+	margin-top: 18px;
+}
+#coordonnees
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.elementCoordonnees
+{
+	margin-right: 15px;
+}
+#sommaire
+{
+	padding-top: 45px;
+	padding-right: 10px;
+
+}
+#sommaireList
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  font-size: 1em;
+}
+#sommaire li, #sommaire a
+{
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+	font-size: 1.2em;
+	color: blue;
+}
+#sommaire a:hover, #sommairea:focus, #sommaire a:active
+{
+  text-decoration: underline;
+  color: orange;
+	font-size: 1.1em;
+}
+#page
+{
+  display: flex;
+	margin: auto;
+  flex-direction: column;
+}
+#page0
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+}
+#reseaux img
+{
+	border: 2px white solid;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+#photo
+{
+	text-align: center;
+}
+#photo img
+{
+  border: 2px white solid;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+#page1
+{
+	margin-bottom: 50px;
+
+}
+#banniere
+{
+	width: 90%;
+	height: 320px;
+	margin: auto;
+	padding-top: 40px;
+	border: 4px white double;
+	border-radius: 25px;
+  background-color: silver;
+	color: white;
+	opacity: 0.3;
+}
+#banniere p
+{
+  text-align: center;
+  font-weight: bold;
+	font-size: 1.5em;
+}
+#pageSansHeader
+{
+  width: 96%;
+  margin: auto;
+	margin-bottom: 25px;
+  border-radius: 25px;
+  background-image: url("../pix/8601.jpg");
+  border: 1px solid white;
+	font-size: 1.5em;
+	z-index: 1;
+	color: grey;
+}
+#pageSansHeader h1
+{
+	font-size: 4em;
+	color: Navy;
+	text-align: center;
+}
+#pageSansHeader h2
+{
+	color: Teal;
+	font-size: 1.75em;
+}
+#pageSansHeader h3
+{
+	color: PaleTurquoise;
+	font-size: 1.25em;
+}
+#page2
+{
+	margin: auto;
+	text-align: center;
+	width: 80%;
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+#formations
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.elementFormation
+{
+	width: 40%;
+	border: 4px outset Dimgray;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	font-weight: bold;
+}
+.elementFormation p
+{
+	font-size: 0.75em;
+}
+#page3
+{
+	margin-top: 75px;
+	margin-bottom: 75px;
+	color: black;
+	text-align: center;
+}
+#languesElt
+{
+  margin: auto;
+  width: 60%;
+	font-size: 1.2em;
+}
+#languesUl
+{
+  display: flex;
+  justify-content: space-between;
+	flex-wrap: wrap;
+  border: 6px solid purple;
+  border-radius: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: purple;
+  background-color: silver;
+	font-size: 0.65em;
+}
+.languesLi
+{
+  list-style: none;
+  width: 20%;
+}
+.languesLi .progressCircle
+{
+  margin-left: 25px;
+}
+#languesElt img
+{
+  width: 40px;
+  height: 20px;
+  border: 2px black solid;
+}
+.languesTitre
+{
+  margin-bottom: 5px;
+}
+#languesElt .progressCircle:after
+{
+  content: attr(level);
+  color: black;
+}
+#languesElt .progressBar, #languesElt .progressSup50
+{
+  border-color: purple;
+}
+#infoElt
+{
+	width: 90%;
+	margin: auto;
+}
+#skillTop
+{
+	display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.skillTopElt
+{
+	width: 30%;
+	min-width: 200px;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+.skillTopElt:nth-child(1)
+{
+	background-color: purple;
+}
+.skillTopElt:nth-child(2)
+{
+	background-color: green;
+}
+.skillTopElt:nth-child(3)
+{
+	background-color: orange;
+}
+#programmationInfo
+{
+  margin: auto;
+  display: flex;
+	justify-content: space-around;
+  flex-wrap: wrap;
+  width: 70%;
+  border: 5px #00BFFF solid;
+  border-radius: 15px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, .5) inset;
+  background-color: silver;
+	font-size: .75em;
+}
+.progSkill
+{
+  text-align: center;
+  margin-right: 10px;
+}
+.progSkill p
+{
+  color: #00BFFF;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+#page4
+{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	color: grey;
+}
+#xp
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+.xpElt
+{
+	width: 60%;
+	margin: auto;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+#page5
+{
+	width: 75%;
+	margin: auto;
+	margin-bottom: 75px;
+}
+#loisirs
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+.loisirElt
+{
+	width: 30%;
+}
+.loisirElt:nth-child(1)
+{
+	background-color: purple;
+}
+.loisirElt:nth-child(2)
+{
+	background-color: green;
+}
+.loisirElt:nth-child(3)
+{
+	background-color: orange;
+}
+#page6
+{
+	margin-top: 75px;
+}
+#formulaireContact
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 90%;
+}
+#objetForm
+{
+	width: 100%;
+}
+#inputForm
+{
+	width: 200px;
+}
+.inputElt
+{
+	margin-bottom: 10px;
+	height: 34.5px;
+}
+#messageForm
+{
+	width: 70%;
+}
+#confirmInput
+{
+	font-size: 0.8em;
+}
+footer
+{
+	width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+	margin-bottom: 10px;
+  position:relative;
+  bottom: 0px;
+  background-color: white;
+	border-radius: 25px 25px 0px 0px;
+  font-size: 1em;
+  margin: auto;
+}
+footer p
+{
+  margin: auto;
+  margin-bottom: 5px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+#copyR
+{
+  width: 60%;
+}
+#fontPix
+{
+  width: 40%;
+}
+
+.progressCircle
+{
+  position: relative;
+  width: 1em;
+  height: 1em;
+  font-size: 5em;
+  border-radius: 50%;
+  border: 0.08em solid white;
+  box-sizing: border-box;
+}
+.progressHide
+{
+  position: absolute;
+  width: 1em;                     /* 100% de la largeur */
+  height: 1em;                    /* 100% de la hauteur */
+  left: -0.0799em;                   /* décalage de la largeur bordure de la gauge */
+  top: -.08em;                    /* décalage de la largeur bordure de la gauge */
+  clip: rect(0, 1em, 1em, .5em);  /* par défaut seule la partie droite est visible */
+  /*background-color: orange;*/
+}
+.progressCircle[data-value^='5']:not([data-value='5']):not([data-value^='5.']) .progressHide,
+.progressCircle[data-value^='6']:not([data-value='6']):not([data-value^='6.']) .progressHide,
+.progressCircle[data-value^='7']:not([data-value='7']):not([data-value^='7.']) .progressHide,
+.progressCircle[data-value^='8']:not([data-value='8']):not([data-value^='8.']) .progressHide,
+.progressCircle[data-value^='9']:not([data-value='9']):not([data-value^='9.']) .progressHide,
+.progressCircle[data-value^='100'] .progressHide
+{
+  clip: rect(auto, auto, auto, auto);
+}
+.progressBar, .progressSup50
+{
+  position: absolute;
+  box-sizing: border-box;         /* prise en compte bordure dans la dimension */
+  border-width: .08em;            /* largeur bordure de la gauge */
+  border-style: solid;
+  border-color: #00BFFF;
+  border-radius: 50%;             /* rendu aspect circulaire */
+  width: 1em;                     /* largeur à 100% */
+  height: 1em;                    /* hauteur à 100% */
+  clip: rect(0, .5em, 1em, 0);    /* on ne garde que la partie gauche */
+}
+.progressSup50
+{
+  display: none;
+  clip: rect(0, 1em, 1em, .5em);
+}
+.progressCircle[data-value^='5']:not([data-value='5']):not([data-value^='5.']) .progressSup50,
+.progressCircle[data-value^='6']:not([data-value='6']):not([data-value^='6.']) .progressSup50,
+.progressCircle[data-value^='7']:not([data-value='7']):not([data-value^='7.']) .progressSup50,
+.progressCircle[data-value^='8']:not([data-value='8']):not([data-value^='8.']) .progressSup50,
+.progressCircle[data-value^='9']:not([data-value='9']):not([data-value^='9.']) .progressSup50,
+.progressCircle[data-value^='100'] .progressSup50
+{
+  display:block;
+}
+.progressCircle:after
+{
+  content: attr(data-value) "%";  /* récup. valeur de progression */
+  font-size: 0.2em;              /* taille de la font en % du parent */
+  height: 100%;                   /* centrage dans le parent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /*-- pour effet shadow intérieur --*/
+  border-radius: 50%;
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .5) inset;
+}
+
+@media all and (max-width: 1300px)
+{
+  #header
+  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+		height: 75px;
+  }
+  #boutonReduce
+  {
+    display: none;
+  }
+	#name
+	{
+		position: absolute;
+		left: 50px;
+		top: 0;
+		font-size: 1.75em;
+		margin-left: 40px;
+	}
+	#headerPhrase
+	{
+		display: none;
+	}
+	#logo
+	{
+		position: absolute;
+		top: -10px;
+		left: 7px;
+	}
+	#sommaire
+	{
+		font-size: 0.75em;
+		width: 75%;
+	}
+	#languesElt
+	{
+	  margin: auto;
+	  width: 60%;
+		font-size: 1.2em;
+	}
+  #languesUl
+	{
+	  display: flex;
+	  justify-content: space-between;
+		flex-wrap: wrap;
+	  border: 6px solid purple;
+	  border-radius: 25px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  color: purple;
+	  background-color: silver;
+		font-size: 0.65em;
+	}
+	.languesLi
+	{
+	  list-style: none;
+	  width: 30%;
+	}
+	.languesLi .progressCircle
+	{
+	  margin-left: 35px;
+	}
+
+	#formulaireContact
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#objetForm
+	{
+		text-align: left;
+		width: 100%;
+	}
+	.objetClt
+	{
+		width: 100%;
+	}
+	#inputForm
+	{
+		width: 100%;
+		max-width: 650px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.inputElt
+	{
+		margin-bottom: 10px;
+		height: 30px;
+		width: 30%;
+	}
+	#messageForm
+	{
+		width: 100%;
+	}
+	#messageClt
+	{
+		width: 100%;
+	}
+}
+@media all and (max-width: 1150px)
+{
+	#header
+	{
+		position: relative;
+	}
+	#boutonReduce, #boutonReduce a
+	{
+		display: none;
+	}
+	#name
+  {
+ 	 display: none;
+  }
+	#sommaire
+	{
+		font-size: 0.75em;
+		width: 90%;
+	}
+	#pageSansHeader
+	{
+		font-size: 0.8em;
+	}
+	#confirmInput
+	{
+		font-size: 1.1em;
+	}
+	footer
+	{
+		font-size: 0.75em;
+	}
+}
+@media all and (max-width: 700px)
+{
+  .languesLi .progressCircle
+  {
+    margin-left: 1px;
+  }
+}
